@@ -1,0 +1,141 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexProperties {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+$text-color: #FFFFFF;
+
+* {
+  @include reset;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right bottom, #CE4BA7 20%, #6660D8 40%, #33A885 60%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  @include flexProperties;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  nav {
+    padding-right: 1rem;
+  }
+  @media screen and (max-width: 350px) {
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  margin-left: 2rem;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  border-top: 3px solid #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+  color: $text-color;
+  cursor: pointer;
+  @media screen and (max-width: 520px) {
+    display: none;
+  }
+}
+
+.button {
+  margin-right: 3rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  color: $text-color;
+  cursor: pointer;
+  &:hover {
+    color: #b6b6b6;
+    transition: 0.3s;
+  }
+}
+
+.promo {
+  @include flexProperties;
+  margin: 2rem;
+  @media screen and (max-width: 900px) {
+      background: #f5eed4;
+  }
+  @media screen and (max-width: 350px) {
+      margin: 3rem 0;
+      padding: 3rem;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #302c34;
+    padding-bottom: 3rem;
+    @media screen and (max-width: 350px) {
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-bottom: 1rem;
+    }
+    &__header {
+      font-size: 1.5rem;
+    }
+    &__text {
+      max-width: 500px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #302c34;
+      @media screen and (max-width: 350px) {
+          display: none;
+      }
+    }
+  }
+  .description {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #302c34;
+    padding-bottom: 3rem;
+    @media screen and (max-width: 350px) {
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-bottom: 1rem;
+    }
+    &__text {
+      max-width: 500px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #302c34;
+      @media screen and (max-width: 350px) {
+          display: none;
+      }
+    }
+  }
+}
+
+footer {
+  @include flexProperties;
+  color: #7e7979;
+  height: 5rem;
+  .social-icon {
+    height: 25px;
+    padding-left: 1rem;
+  }
+  h6 {
+    color: #7e7979;
+    padding-right: 1rem;
+  }
+}

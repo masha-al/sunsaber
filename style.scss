@@ -64,7 +64,7 @@ header {
 
 .promo {
   @include flexProperties;
-  margin: 2rem;
+  margin: 9rem 7rem 9rem 8rem;
   @media screen and (max-width: 900px) {
       background: #f5eed4;
   }
@@ -74,51 +74,35 @@ header {
   }
 
   .title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: #302c34;
-    padding-bottom: 3rem;
+    margin-right: 15rem;
     @media screen and (max-width: 350px) {
-      font-size: 1rem;
-      line-height: 1rem;
-      padding-bottom: 1rem;
+      margin: 1rem;
     }
     &__header {
-      font-size: 1.5rem;
+      font-weight: bold;
+      font-size: 6rem;
+      color: $text-color;
+      line-height: 8rem;
     }
     &__text {
-      max-width: 500px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      color: #302c34;
+      font-size: 1rem;
+      color: $text-color;
       @media screen and (max-width: 350px) {
           display: none;
       }
     }
   }
   .description {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: #302c34;
-    padding-bottom: 3rem;
     @media screen and (max-width: 350px) {
       font-size: 1rem;
       line-height: 1rem;
       padding-bottom: 1rem;
     }
-    &__text {
-      max-width: 500px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      color: #302c34;
+    p {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: $text-color;
       @media screen and (max-width: 350px) {
           display: none;
       }
@@ -135,7 +119,7 @@ footer {
     padding-left: 1rem;
   }
   h6 {
-    color: #7e7979;
+    color: $text-color;
     padding-right: 1rem;
   }
 }

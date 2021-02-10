@@ -61,7 +61,7 @@ header nav {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 2rem;
+  margin: 9rem 7rem 9rem 8rem;
 }
 @media screen and (max-width: 900px) {
   .promo {
@@ -75,43 +75,27 @@ header nav {
   }
 }
 .promo .title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #302c34;
-  padding-bottom: 3rem;
+  margin-right: 15rem;
 }
 @media screen and (max-width: 350px) {
   .promo .title {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-bottom: 1rem;
+    margin: 1rem;
   }
 }
 .promo .title__header {
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 6rem;
+  color: #FFFFFF;
+  line-height: 8rem;
 }
 .promo .title__text {
-  max-width: 500px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #302c34;
+  font-size: 1rem;
+  color: #FFFFFF;
 }
 @media screen and (max-width: 350px) {
   .promo .title__text {
     display: none;
   }
-}
-.promo .description {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #302c34;
-  padding-bottom: 3rem;
 }
 @media screen and (max-width: 350px) {
   .promo .description {
@@ -120,16 +104,14 @@ header nav {
     padding-bottom: 1rem;
   }
 }
-.promo .description__text {
-  max-width: 500px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #302c34;
+.promo .description p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #FFFFFF;
 }
 @media screen and (max-width: 350px) {
-  .promo .description__text {
+  .promo .description p {
     display: none;
   }
 }
@@ -147,7 +129,7 @@ footer .social-icon {
   padding-left: 1rem;
 }
 footer h6 {
-  color: #7e7979;
+  color: #FFFFFF;
   padding-right: 1rem;
 }
 

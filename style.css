@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(to right bottom, #CE4BA7 20%, #6660D8 40%, #33A885 60%);
+  background: linear-gradient(to right bottom, #CE4BA7 20%, #6660D8 40%, #33A885 80%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,9 +22,9 @@ header {
 header nav {
   padding-right: 1rem;
 }
-@media screen and (max-width: 350px) {
-  header {
-    margin-bottom: 0;
+@media screen and (max-width: 590px) {
+  header nav {
+    display: none;
   }
 }
 
@@ -39,7 +39,7 @@ header nav {
 }
 @media screen and (max-width: 520px) {
   .logo {
-    display: none;
+    font-size: 0.8rem;
   }
 }
 
@@ -55,31 +55,52 @@ header nav {
   color: #b6b6b6;
   transition: 0.3s;
 }
+@media screen and (max-width: 820px) {
+  .button {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+  }
+}
 
 .promo {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 9rem 7rem 9rem 8rem;
+  margin: 9rem 7rem 7rem 8rem;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 890px) {
   .promo {
-    background: #f5eed4;
+    flex-direction: column;
+    margin: 2rem 0rem 2rem 3rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 550px) {
   .promo {
-    margin: 3rem 0;
-    padding: 3rem;
+    margin: 2rem 1rem 1rem 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .promo {
+    margin: 1rem 0.5rem 3rem 0.5rem;
   }
 }
 .promo .title {
   margin-right: 15rem;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1050px) {
   .promo .title {
-    margin: 1rem;
+    margin: 1rem 7rem 1rem 3rem;
+  }
+}
+@media screen and (max-width: 890px) {
+  .promo .title {
+    margin: 1rem 5rem 1rem 0rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .promo .title {
+    margin: 1rem 3rem 1rem 0rem;
   }
 }
 .promo .title__header {
@@ -88,13 +109,25 @@ header nav {
   color: #FFFFFF;
   line-height: 8rem;
 }
+@media screen and (max-width: 1100px) {
+  .promo .title__header {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .promo .title__header {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
 .promo .title__text {
   font-size: 1rem;
   color: #FFFFFF;
 }
 @media screen and (max-width: 350px) {
   .promo .title__text {
-    display: none;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 350px) {
@@ -112,7 +145,7 @@ header nav {
 }
 @media screen and (max-width: 350px) {
   .promo .description p {
-    display: none;
+    margin-bottom: 1rem;
   }
 }
 
@@ -131,6 +164,63 @@ footer .social-icon {
 footer h6 {
   color: #FFFFFF;
   padding-right: 1rem;
+}
+
+.geometric {
+  position: fixed;
+  z-index: -1;
+}
+
+.circle--big {
+  width: 600px;
+  height: 600px;
+  background: rgba(152, 176, 201, 0);
+  border-radius: 300px;
+  border: 40px solid rgba(110, 110, 110, 0.397);
+  bottom: -230px;
+  right: -50px;
+}
+
+.circle--small {
+  width: 40px;
+  height: 40px;
+  background: rgba(110, 110, 110, 0.397);
+  border-radius: 20px;
+  bottom: 80px;
+  right: 225px;
+}
+
+.parallelogram {
+  border: 60px solid rgba(110, 110, 110, 0.397);
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+  clip-path: polygon(28% 34%, 100% 0%, 70% 72%, 0% 100%);
+  bottom: -20px;
+  right: 120px;
+}
+
+.triangle--big {
+  border: 80px solid rgba(187, 187, 187, 0.24);
+  clip-path: polygon(24% 21%, 88% 73%, 85% 59%, 44% 26%, 89% 14%, 81% 59%, 78% 54%, 35% 23%, 88% 72%, 100% 0%);
+  top: 150px;
+  right: 450px;
+}
+
+.triangle--middle {
+  border: 60px solid rgba(187, 187, 187, 0.24);
+  clip-path: polygon(24% 21%, 88% 73%, 85% 59%, 44% 26%, 89% 14%, 81% 59%, 78% 54%, 35% 23%, 88% 72%, 100% 0%);
+  transform: rotate(30deg);
+  top: 90px;
+  right: 625px;
+}
+
+.triangle--small {
+  border: 40px solid rgba(187, 187, 187, 0.24);
+  clip-path: polygon(24% 21%, 88% 73%, 85% 59%, 44% 26%, 89% 14%, 81% 59%, 78% 54%, 35% 23%, 88% 72%, 100% 0%);
+  transform: rotate(60deg);
+  top: 100px;
+  right: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -43,6 +43,7 @@ header {
       border: none;
       color: $text-color;
       cursor: pointer;
+      text-decoration: none;
       &:hover {
         color: #b6b6b6;
         transition: 0.3s;
@@ -62,6 +63,7 @@ header {
   border-top: 3px solid #FFFFFF;
   border-bottom: 3px solid #FFFFFF;
   color: $text-color;
+  text-decoration: none;
   cursor: pointer;
   @media screen and (max-width: 520px) {
     font-size: 0.8rem;

@@ -34,6 +34,7 @@ header nav a {
   border: none;
   color: #FFFFFF;
   cursor: pointer;
+  text-decoration: none;
 }
 header nav a:hover {
   color: #b6b6b6;
@@ -53,6 +54,7 @@ header nav a:hover {
   border-top: 3px solid #FFFFFF;
   border-bottom: 3px solid #FFFFFF;
   color: #FFFFFF;
+  text-decoration: none;
   cursor: pointer;
 }
 @media screen and (max-width: 520px) {

@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -73,6 +72,7 @@ header nav a:hover {
 @media screen and (max-width: 890px) {
   .promo {
     flex-direction: column;
+    align-items: flex-start;
     margin: 2rem 0rem 2rem 3rem;
   }
 }
@@ -170,6 +170,7 @@ footer h6 {
 .geometric {
   position: fixed;
   z-index: -1;
+  overflow: hidden;
 }
 
 .circle--big {
